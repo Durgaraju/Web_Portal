@@ -1,0 +1,200 @@
+<html>
+	<head>
+		<title>Application</title>
+			<meta charset="utf-8">
+			<link href="css/bootstrap.min.css" rel="stylesheet">
+			
+			
+	<script type="text/javascript" src="vspfinal.js" >
+	
+	</script>
+			
+<div class="page-header">
+<h1>Vizag Steel Plant
+<small>Recruitment Application Form</small>
+</h1>
+</div> 	
+		
+	</head>
+<body style="background-color:silver">
+
+	<form  name="myform" action="test.jsp" method="post">
+		
+		<center> <h2> BASIC DETAILS</h2></center>
+
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Post applied for</label>
+			</div>
+			
+			<div class="radio">
+				<label class="checkbox-inline">
+					<input type="radio"  id="radio1" name="post" value="M.Tech">M.Tech 
+				</label>
+				<label class="checkbox-inline">
+					<input type="radio"  id="radio2" name="post" value="M.Sc">M.Sc
+				</label>
+			</div>
+					 
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Category</label>
+			</div>
+			
+			<div class="radio">
+				<label class="checkbox-inline">
+					<input type="radio" id="gen" onclick="caste();" name="Category" value="gen">GEN/OBC
+				</label> 
+				<label class="checkbox-inline">
+					<input type="radio" id="sc"  onclick="caste();" name="Category" value ="sc">SC/ST
+				</label>
+			
+				<label class="checkbox-inline">
+					<div id='certi' style="visibility:hidden" > 
+					Enter Certificate Number : <input type='text' id='certino' name='certino' placeholder="234132124646" />
+					</div>
+				</label>
+			</div>
+			 
+			
+
+			
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Physically Challenged</label>
+			</div>
+
+			<div class="radio">
+				<label class="checkbox-inline">
+					<input type="radio" id="phyes" onclick="phcheck();" name="PH" value="yes">YES
+				</label>
+				<label class="checkbox-inline">
+					<input type="radio" id="radio6" onclick="phcheck();" name="PH" value="no" checked="true">NO
+				</label>
+				<label class="checkbox-inline">
+					<div id='phlevel' style="visibility:hidden" > 
+					Enter the Percentage : <input type='text' id='certino' name='certino' placeholder="60" /> %
+					</div>
+				</label>
+			</div>
+			
+		 	<div class="form-group">
+				<label class="col-sm-2 control-label">Domiciled in J&K state </label>
+			</div>
+			<div class="radio">
+				<label class="checkbox-inline">
+				 	<input type="radio" id="radio7" name="state" value="yes" >YES
+				 </label>
+				<label class="checkbox-inline">
+					<input type="radio" checked="true" id="radio8" name="state" value="no">NO  
+				</label>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Minority Status</label>
+			</div>
+						<select id="Select1" name="occup" >
+						<option selected="selected"  value="0">Muslim</option>
+						<option value="2">Jain</option>
+						<option value="3">Christians</option>
+						<option value="4">Others</option>
+					</select>
+				 
+			 
+
+
+			 
+<div class="col-sm-20">
+		 <div class="form-group">
+				<label class="col-sm-2 control-label">Application Processing Fee</label>
+		</div>
+		<div class="radio">
+
+			<label class="checkbox-inline">
+				<input class="form-control" disabled id="fee"  type="text"  size="10"/> 
+			</label>
+
+		</div>
+			 
+</div>
+	<table> <tr>
+<div>
+	<td><label class="col-sm-2 control-label">Name</label> </td>
+</div>
+<div class="col-sm-10">
+<td>
+		<div class="radio">
+			<label class="checkbox-inline">
+				<td> <input type="text" class="form-control" name="fhello" size="30" id="fname" placeholder="First Name"> </td> 
+			</label>
+			<label class="checkbox-inline">
+				 <td><input type="text" class="form-control" name="mhello" size="30" id="mname" placeholder="Middle Name"> </td>
+			</label>
+			<label class="checkbox-inline">
+				 <td><input type="text" class="form-control" name="lhello" size="30" id="lname" placeholder="Last Name"> </td>
+			</label>
+</div>
+				
+</td>		 
+			</tr></table> 
+			
+			
+			
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Gender</label>
+			</div>
+				
+			<label class="checkbox-inline">
+				 <input type="radio" checked="true" id="male" name="gender">Male 
+			</label>
+			<label class="checkbox-inline">
+				 	<input type="radio" id="fm" name="gender">Female 
+			</label>
+
+			
+			<div class="form-group">
+<label for="lastname" class="col-sm-2 control-label">Date Of Birth</label>
+<div class="col-sm-10">
+<input type="text" class="form-control" id="lastname"
+placeholder="DD-MM-YYYY">
+</div>
+</div>
+			
+			 
+		<div class="form-group">
+			<label for="lastname" class="col-sm-2 control-label">Email Address</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="email"  name="email" placeholder="abc@def.com">
+			</div>
+		</div>
+	
+
+		<div class="form-group">
+			<label for="lastname" class="col-sm-2 control-label">Confirm Email Address</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="email2"  name="email" placeholder="abc@def.com">
+			</div>
+		</div>
+
+
+			
+		<div class="form-group">
+			<label for="lastname" class="col-sm-2 control-label">Pan Card Number</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="pan" name="pan" placeholder="125845788539654(12 digit no)"/>
+			</div>
+		</div>
+
+
+			
+		<div class="form-group">
+			<label for="lastname" class="col-sm-2 control-label">Aadhar Card No</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="adhar" name="adhar" placeholder="ASFDML4521Q(10 digit no)"/>
+			</div>
+		</div>
+
+			 			 
+			<center>	
+				<button id="Button1"  type="submit" class="btn btn-primary btn-lg" onclick="return validate()"> Register</button>
+			</center>
+	</form>
+</body>
+</html>

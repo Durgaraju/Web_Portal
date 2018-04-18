@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<head>
+<title>Recriutment portal</title>
+    <meta charset="utf-8"> 
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="bootstrap.min.css" rel="stylesheet">-->
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script src="script.js" type="text/javascript"></script>	
+</head>
+<body onload="amount();" >
+<img src ="D:\Pictures\7 wonders\1280px-Gizeh_Cheops_BW_1.jpg"  style="width:1340px;height:150px;">
+<div class="page-header"><h1><label class="col-sm-2 control-label">REGISTRATION FORM [STAGE-1] JUNIOR TRAINEE-2016</label></h1></div>
+<marquee direction="right" heigth=50pt scrollamount="8" behavior="alternate" >
+<label class="col-sm-2 control-label">***ENTER DETAILS AS PER SSC CERTIFICATE***</label></marquee>
+<h3><label class="col-sm-2 control-label"><center>BASIC DETAILS</center></label></h3>
+<h5><label class="col-sm-2 control-label">*Fields are Compulsory</label></h5>
+<form role= "form" action="reg.jsp" method="POST" name="regf">       
+<div class="form-group">
+<table align="left" cellpadding ="10">	
+
+<tr>
+<td><label class="col-sm-2 control-label" ><span class="highlight">*</span>CATEGORY</label></td>
+<td><label class="checkbox-inline">
+<input type="radio"  id="gen" onclick="caste();" name="Category" value="GEN">GEN
+</label>
+<label class="checkbox-inline">
+<input type="radio"  id="obc" onclick="caste();" name="Category" value="OBC">OBC (NON CREAMY LAYER)
+</label>
+<label class="checkbox-inline">
+<input type="radio" id="sc" onclick="caste();" name="Category" value="SC">SC
+</label>
+<label class="checkbox-inline">
+<input type="radio" id="st" onclick="caste();" name="Category" value="ST">ST
+</label></td>
+<td><label class="checkbox-inline">
+<div id='certi' style="visibility:hidden" > 
+<label class="col-sm-2 control-label">Enter certificate no.:</label> <input type='text' id='certino' name='certino' placeholder="12346789012" /></div>
+</label>
+</td>
+</tr>
+<tr>
+<td><label class="col-sm-2 control-label"><span class="highlight">*</span>PHYSICALLY CHALLENGED</label></td>
+<td><label class="checkbox-inline">
+<input type="radio"  id="yes" onclick="phvalidity()" name="PhysicallyChallenged" value="yes"> (If <span class="highlight">YES</span>,click here)
+</label>
+</td><td>
+<label class="checkbox-inline">
+<div id='phcheck' style="visibility:hidden" > 
+<label class="col-sm-2 control-label">Enter type of disability:<input type='text' id='phtype' name='phtype' placeholder="type here" /></div>
+</label>
+</td>
+</tr>
+<tr>
+<td><label class="col-sm-2 control-label"><span class="highlight">*</span>DOMICILED IN J&K STATE</label></td><td>
+<label class="checkbox-inline">
+<input type="radio"  id="radio1" name="state" value="yes">YES
+</label>
+<label class="checkbox-inline">
+<input type="radio" id="radio2" name="state" value="no">NO
+<label class="col-sm-2 control-label">[Applicable only between(1/01/1980)and(31/12/1989)]</label>
+</label>
+</td>
+</tr>
+<tr>
+<td><label class="col-sm-2 control-label"><span class="highlight">*</span>MINORITY STATUS</label></td>
+<td> <select name="minority" class="custom-select">
+        <option>--Not applicable--</option>
+		<option>Muslim</option>
+        <option>Christian</option>
+        <option>Jain</option>
+        <option>Others</option>
+    </select>
+</td>
+</tr>
+<tr>
+<td><label class="col-sm-2 control-label"><span class="highlight">*</span>FEE AMOUNT</label></label></td>
+<td><input id="ape" type="text"  size="7"  ></td>
+</tr>
+<tr>
+<td><label class="col-sm-2 control-label"><span class="highlight">*</span>NAME</label></td>
+<td><input type="text" class="form-control" id="name" size="30" placeholder="Enter Name" required="true">
+</tr>
+<tr>
+<td><label class="col-sm-2 control-label"><span class="highlight">*</span>GENDER</label></td>
+<td> <select name="minority" class="custom-select">
+        <option>--Gender--</option>
+		<option>Male</option>
+        <option>Female</option>
+        <option>Others</option>
+    </select><label class="col-sm-2 control-label">[FEMALE candidates are eligible for INSTRUMENTATON DISCIPLINE]</label>
+</td>
+</tr>
+<tr>
+<td><label class="col-sm-2 control-label"><span class="highlight">*</span>DATE OF BIRTH</label></td>
+<td><input type="date" id="dt" size="30" onclick="mydate1();"hidden/>
+<input type="text" id="ndt" size="30" onmouseover="mydate();"/>
+
+</td>
+</tr>
+<tr>
+<td><label class="col-sm-2 control-label"><span class="highlight">*</span>EMAIL ADDRESS</label></td>
+<td><input id="email" type="text" size="30" required="true"></td>
+</tr>
+<tr>
+<td><label class="col-sm-2 control-label"><span class="highlight">*</span>CONFIRM EMAIL ADDRESS</label></td>
+<td><input id="cemail" type="text" size="30" required="true"></td>
+</tr>
+<tr>
+<td><label class="col-sm-2 control-label"><span class="highlight">*</span>PAN CARD NUMBER</label></td>
+<td><input id="varchar" type="text" size="30" required="true"><label class="col-sm-2 control-label">(12 digit no)</label></td>
+</tr>
+<tr>
+<td><label class="col-sm-2 control-label"><span class="highlight">*</span>AADHAR CARD NUMBER </label></td>
+<td><input id="number" type="text" size="30" required="true"><label class="col-sm-2 control-label">(10 digit no)</label></td>
+</div>
+</tr>
+<tr>
+<center>
+<td></td>
+<td>
+<input type="Submit" value="REGISTER" class="bigbutton"> 
+<input type="Reset" value="RESET" class="bigbutton"></td>
+</center>
+</tr>
+</center>
+</table>
+</form>
+</body>
+</html>

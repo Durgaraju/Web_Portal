@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Application</title>
+
+
+
+
+    <meta charset="utf-8"> 
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" />
+  	<link rel="stylesheet" href="style.css" type="text/css" />
+	-->
+
+</head>
+<body style="background-color:silver">
+
+<form role="form" action="register.jsp" method="post">
+<div class="form-group">
+<h1><center>BASIC DETAILS</center></h1>
+<table cellspacing="10pt"> 	
+<tr>
+<td>Post applied for</td>
+<td><input type="radio" checked="true" id="radio1" name="branch">M.Tech </td><td>
+<input type="radio" id="radio2" name="Post">M.Sc
+</td>
+</tr>
+<tr>
+<td>Category</td><td>
+<input type="radio" checked="true" id="radio1" name="Category">GEN/OBC
+<input type="radio" id="radio2" name="Category">SC/ST
+</td>
+</tr>
+<tr>
+<td>Physically Challenged</td><td>
+<input type="radio" checked="true" id="radio1" name="Physically Challenged">YES
+<input type="radio" id="radio2" name="Physically Challenged">NO
+</td>
+</tr>
+<tr>
+<td>Domiciled in J&K state</td><td>
+<input type="radio" checked="true" id="radio1" name="state">YES
+<input type="radio" id="radio2" name="state">NO<td>(1/01/1980)to(1/12/1989)</td>
+</td>
+</tr>
+<tr>
+<td>Minority Status</td>
+<td><select id="Select1" name="occup" >
+<option selected="selected"  value="0">select</option>
+<option value="0">Muslim</option>
+<option value="2">Jain</option>
+<option value="3">Christians</option>
+<option value="4">Others</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Application Processing Fee</td>
+<td><input id="email" type="text" size="30"/></td>
+</tr>
+<tr>
+
+
+
+<td>Name</td>
+<td><input type="text" class="form-control" id="name" placeholder="Enter Name">
+
+</tr>
+<tr>
+<td>Gender
+<td><input type="radio" checked="true" id="radio1"
+name="gender">Male
+<input type="radio" id="radio2" name="gender">Female
+</td>
+</tr>
+<tr>
+<td>Date Of Birth</td>
+</tr>
+<tr>
+<td>Email Address</td>
+<td><input id="email" type="text" size="30"/></td>
+</tr>
+<tr>
+<td>Confirm Email Address</td>
+<td><input id="email" type="text" size="30"/></td>
+</tr>
+<tr>
+<td>Pan Card Number</td>
+<td><input id="varchar" type="text" size="30"/></td><td>EX: 125845788539654(12 digit no)</td>
+</tr>
+<tr>
+<td>Aadhar Card No </td>
+<td><input id="number" type="text" size="30"/></td><td>EX: ASFDML4521Q(10 digit no)</td>
+</div>
+</tr>
+</table>
+<p/>
+<input id="Button1" type="submit" value="Register" />
+</form>
+</body>
+</html>

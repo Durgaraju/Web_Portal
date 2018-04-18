@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<title>Application</title>
+			<meta charset="utf-8"> 
+			
+			
+	<script type="text/javascript" src="vsp.js" >
+	
+	</script>
+			
+	</head>
+<body style="background-color:silver">
+
+<form role="form" name="myform" action="register.jsp" method="post">
+<div class="form-group">
+<h1><center>BASIC DETAILS</center></h1>
+<table cellspacing="10pt"> 	
+<div>
+<tr>
+<td>Post applied for</td>
+<td>
+		<input type="radio"  id="radio1" name="post">M.Tech </td><td>
+		<input type="radio" id="radio2" name="post">M.Sc
+</td>
+</tr>
+</div>
+<tr>
+<td>Category</td><td>
+<input type="radio" id="radio3" name="Category">GEN/OBC
+<input type="radio" id="radio4" name="Category">SC/ST
+</td>
+</tr>
+<tr>
+<td>Physically Challenged</td><td>
+<input type="radio" id="radio5" name="Physically Challenged">YES
+<input type="radio" id="radio6" name="Physically Challenged">NO
+</td>
+</tr>
+<tr>
+<td>Domiciled in J&K state</td><td>
+<input type="radio" checked="true" id="radio7" name="state">YES
+<input type="radio" id="radio8" name="state">NO<td>(1/01/1980)to(1/12/1989)</td>
+</td> 
+</tr>
+<tr>
+<td>Minority Status</td>
+<td><select id="Select1" name="occup" >
+<option selected="selected"  value="0">select</option>
+<option value="0">Muslim</option>
+<option value="2">Jain</option>
+<option value="3">Christians</option>
+<option value="4">Others</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Application Processing Fee</td>
+<td><input readonly id="fee" style="background-color:olive" type="text" value="700.00/-" size="10"/></td>
+</tr>
+<tr>
+
+
+
+<td>Name</td>
+<td><input type="text" class="form-control" name="hello" id="name" placeholder="Enter Name">
+
+</tr>
+<tr>
+<td>Gender
+<td><input type="radio" checked="true" id="radio9" name="gender">Male
+<input type="radio" id="radio10" name="gender">Female
+</td>
+</tr>
+<tr>
+<td>Date Of Birth</td>
+</tr>
+<tr>
+<td>Email Address</td>
+<td><input id="email" type="text" size="30"name="email" placeholder="abc@def.com" /></td>
+</tr>
+<tr>
+<td>Confirm Email Address</td>
+<td><input id="email2" type="text" size="30" placeholder="abc@def.com" /></td>
+</tr>
+<tr>
+<td>Pan Card Number</td>
+<td><input id="pan" type="text" size="30" name="pan" placeholder="125845788539654(12 digit no)"/></td>
+</tr>
+<tr>
+<td>Aadhar Card No </td>
+<td><input id="adhar" type="text" size="30" name="adhar" placeholder="ASFDML4521Q(10 digit no)" /></td>
+</div>
+</tr>
+</table>
+<p/>
+<input id="Button1" type="submit" value="Register" onclick="return validate()"  />
+</form>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<html>
+<head>
+<script src="reg.js" type="text/javascript"></script>
+<title>Basic Details</title>
+<style>
+body{background-color:pink;}
+</style>
+</head>
+<body onload="fee();">
+<form action="photo.html" method="post" bgcolor="pink" name="regform" onsubmit="return validate()">
+<img src="topnewfinal1.png" width="1350px">
+<font size="5pt" color="green">
+<h1>Registration form [Stage-1] Junior Trainee-2016</h1>
+<style>
+h1{text-transform:uppercase;}</style>
+<center>
+<font size="5pt" color="lavendar" bgcolor="cornsilk">
+<h1 style= "font-family:palatino linotype" ><i>Basic Details</i></h1></center>
+<font size="5" color="navy" >
+<marquee direction ="right" scrollamount="4" behavior="alternate" border="2pt">Enter the details same as in SSC Certificate</marquee>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+<center>
+<table style="font-size:15pt"cellspacing="30pt">
+<tr>
+<td>Post applied for</td>
+<td><input type="radio" checked="true" id="radio1" name="post">M.Tech
+<input type="radio" id="radio2" name="post">MCA
+<input type="radio" id="radio3" name="post">B.Tech
+<input type="radio" id="radio4" name="post">PHD
+</tr>
+<tr>
+<td>Category
+<td><input type="radio" checked="true" id="radio1" name="Category" onclick="fee();show();">General
+<input type="radio" id="radio2" name="Category" onclick="fee();show();">OBC
+<input type="radio" id="radio3" name="Category" onclick="fee();show();">Others
+</td>
+</tr>
+<tr><td>
+<div id="certi1">Certificate Number</td>
+<td><input type="text"  id="certi1" size="30"  maxlength="16" placeholder="Category certificate Number" required="true"/></div>
+</td></tr>
+<tr>
+<td>Physically Challenged
+<td><input type="radio" checked="true" id="radio1" name="PC">Yes
+<input type="radio" id="radio2" name="PC">No
+</td>
+</tr>
+<tr>
+<td>Domicille in J&K State
+<td><input type="radio" checked="true" id="radio1"
+name="Domicille">Yes
+<input type="radio" id="radio2" name="Domicille">No (01-01-1980 to 01-12-2000)
+</td>
+</tr>
+<tr>
+<td>Minority Status
+<td><select id="Select1" name="MS" >
+<option selected="selected" value="1">Muslim</option>
+<option value="2">Christian</option>
+<option value="3">Not In Minority Status</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Ex-Servicemen
+<td><input type="radio" checked="true" id="radio1" name="ex">Yes
+<input type="radio" id="radio2" name="ex">No   
+</td>
+</tr>
+<tr>
+<td>Sports Person
+<td><input type="radio" checked="true" id="radio1" name="SP">Yes
+<input type="radio" id="radio2" name="SP">No
+</td>
+</tr>
+<tr>
+<td>Registration Fee</td>
+<td><input id="RF" type="text" size="30" required="true" value="" pattern="[0-9]+" placeholder="Enter fee amount" readonly/></td>
+</tr>
+<tr>
+<td>First Name</td>
+<td><input id="Name1" type="text" size="30" required="true" placeholder="Enter First name" required pattern="[a-zA-z]+"/>
+</td>
+<td>Last Name</td>
+<td><input id="Name2" type="text" size="30"  placeholder="Enter Last name"required="true" />
+</td>
+</tr>
+<tr>
+<td>Date Of Birth</td>
+<td><input id="DD" type="date" size="15" required="true" required pattern="/d{1,2}/\m{1,2}/\y{1,4}" placeholder="dd-mm-yyyy"></td>
+</tr>
+<td>Nativity
+<td><input type="text" id="nat" name="country" placeholder="Country" required="true" pattern="[a-zA-Z]+"></tr>
+<tr>
+<td>Gender
+<td><input type="radio" checked="true" id="radio1" name="gen">Male
+<input type="radio" id="radio2" name="gen">Female
+</td>
+</tr>
+<tr><td>Email Address
+<td><input id="email1" type="text" size="30" required="true" placeholder="abc@xyz.com"/></tr>
+<tr>
+<td>Re-enter Email</td>
+<td><input id="email2" type="text" required="true" placeholder="abc@xyz.com"/></td>
+</tr>
+<tr>
+<td>Mobile No
+<td><input type="text" id="num" name="mob" required="true" placeholder="Enter 10 digit mobile no" pattern="[0-9]+">
+</tr>
+<tr>
+<center>
+<td></td>
+<td>
+<input type="Submit" value="Register" class="bigbutton"> 
+<input type="reset" value="Clear" class="bigbutton"></td>
+</center>
+</tr>
+</center>
+</body>
+</html>
